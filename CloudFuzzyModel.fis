@@ -1,5 +1,5 @@
 [System]
-Name='PredpovedPocasyProjektModel'
+Name='CloudFuzzyModel'
 Type='mamdani'
 Version=2.0
 NumInputs=5
