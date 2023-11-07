@@ -14,11 +14,13 @@ DefuzzMethod='centroid'
 [Input1]
 Name='denni_doba'
 Range=[0 23]
-NumMFs=4
-MF1='noc':'trimf',[-1 0 6]
-MF2='rano':'trimf',[0 6 12]
-MF3='poledne':'trimf',[6 12 18]
-MF4='vecer':'trimf',[12 18 23]
+NumMFs=6
+MF1='noc':'trimf',[-1 3 7] 
+MF2='rano':'trimf',[3 7 11] 
+MF3='dopoledne':'trimf',[7 10 13]
+MF4='poledne':'trimf',[10 13 16] 
+MF5='odpoledne':'trimf',[13 16 19]
+MF6='vecer':'trimf',[16 19 23] 
 
 [Input2]
 Name='rok'
