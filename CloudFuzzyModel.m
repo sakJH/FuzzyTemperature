@@ -1,5 +1,5 @@
 % Nactení dat z Excelu do tabulky
-filename = 'pocasi.xlsx';
+filename = 'pocasi2.xlsx';
 data = readtable(filename);
 
 % Optimalizace pomoci optimal1
