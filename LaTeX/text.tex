@@ -1,0 +1,171 @@
+\documentclass[journal]{IEEEtran}
+
+
+\usepackage[czech]{babel}
+
+
+% DOPLNIJICI BALICKY
+\usepackage[utf8]		%	Kódování zdrojových souborů je Windows-1250
+	{inputenc}					% Balíček pro nastavení kódování zdrojových souborů
+\usepackage{cmap} 		% Balíček cmap zajišťuje, že PDF vytvořené `pdflatexem' je
+											% plně "prohledávatelné" a "kopírovatelné"
+
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{dsfont}
+\usepackage{layouts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{acro}
+
+\include{ac}
+
+
+\def\contentsname{Contents}
+\def\listfigurename{List of Figures}
+\def\listtablename{List of Tables}
+\def\refname{References}
+\def\indexname{Index}
+\def\figurename{Obr.}
+\def\tablename{Tab.}
+\def\partname{Part}
+\def\appendixname{Appendix}
+\def\abstractname{Abstract}
+% IEEE specific names
+\def\IEEEkeywordsname{Klíčová slova}
+\def\IEEEproofname{Proof}
+
+
+
+% zkratky
+\DeclareAcronym{MSE}{
+  short=MSE,
+  long=mean squared error
+}
+
+\DeclareAcronym{PSNR}{
+  short=PSNR,
+  long=peak signal-to-noise ratio
+}
+
+\DeclareAcronym{SSIM}{
+  short=SSIM,
+  long=structural similarity
+}
+% konec zkratek
+
+
+\title{Název vašeho projektu - článku}
+
+
+\author{Jmeno Prijmeni, Jmeno Prijmeni
+        \linebreak
+        Faculty of Informatics and Management
+        \linebreak
+        University of Hradec Kralove,
+        \linebreak
+        Hradec Kralove, Czech Republic
+        \linebreak
+        dobromi1@uhk.cz, dobromi1@uhk.cz
+
+}
+
+\begin{document}
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract or keywords.
+\begin{abstract}
+abstraktem se rozumí 10 až 15 řádků popisujících stručně obsah vašeho článku. Nejprve popište obecnou problematiku vašeho projektu, následně popište vámi řešený problém a pak čeho jste dosáhli a výsledky spolu s oblastí nasazení/použití.
+\end{abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+klíčové slovo 1; klíčové slovo 2; klíčové slovo 3; klíčové slovo 4; klíčové slovo 5
+\end{IEEEkeywords}
+
+
+\IEEEpeerreviewmaketitle
+
+
+
+\section{INTRODUCTION/ÚVOD}
+
+\subsection{OBSAH}
+V úvodu definovat oblast bádání (problematiky) a postupně se dostat k tomu, kde je problém (v závěrečné části úvodu).
+\subsection{ROZSAH}
+Tato kapitola by měla mít rozsah minimálně do konce první strany dokumentu. Maximálně však do poloviny levého sloupce na druhé straně.
+\subsection{CITACE}
+V této kapitole budou alespoň 3, lépe však 5 odkazů na literaturu, vztahující se k popisované problematice, aby bylo z textu patrné, že se jedná o aktuální téma.
+Minimálně je třeba nalézt 3 články z impaktovaných časopisů ISI WOK JCR, nebo z konferencí indexovaných ISI WOK CPCI. Najdete na stránce www.isiknowledge.com ale pouze pokud jste v rámci UHK (tedy buď na PC v budovách UHK, nebo přes VPN).
+
+
+
+\section{PROBLEM DEFINITION/ DEFINICE PROBLÉMU}
+\subsection{OBSAH}
+V této kapitole je třeba definovat problém a ukázat alespoň tři řešení (lépe 5) od někoho jiného (formou odstavce shrnujícího přístup dotyčného (3 až 5 řádků)). Kapitola by měla končit konstatováním, že žádný z přístupů neřeší definovaný problém tak, jak by bylo třeba (jak bychom potřebovali my) a proto je třeba najít nový způsob (ten náš), o kterém se bude pojednávat v další kapitole.
+\subsection{ROZSAH}
+Tato kapitola by měla mít rozsah cca 1 stranu.
+\subsection{CITACE}
+V této kapitole budou alespoň 3, lépe však 5 odkazů na literaturu, vztahující se k popisované problematice, aby bylo z textu patrné, že se jedná o aktuální téma.
+
+
+
+
+\section{NEW SOLUTION / NOVÉ ŘEŠENÍ}
+
+\subsection{OBSAH}
+V této kapitole je třeba přesně popsat nový způsob řešení a to včetně nutné teorie, která s tím souvisí. 
+\subsection{ROZSAH}
+Rozsahem je minimálně 1 strana a max. 2 strany.
+
+
+
+
+\section{IMPLEMENTATION / IMPLEMENTACE ŘEŠENÍ}
+\subsection{OBSAH}
+Tato kapitola by měla pojednávat o praktické implementaci nového řešení. Tedy jak dojít od teorie k implementaci a jak jsme to řešili my (vy).
+\subsection{ROZSAH}
+Rozsah je min. 1 strana, maximálně 2 strany.
+
+
+
+
+
+\section{TESTING OF DEVELOPED APPLICATION / TESTOVÁNÍ VYVINUTÉ APLIKACE - ŘEŠENÍ}
+\subsection{OBSAH}
+Zde musí být definice, jak bude testováno a co má být přesně výsledkem.
+Vlastní testování a výsledky formou tabulek budou v podkapitole
+Zhodnocení výsledků testování je nejlépe slovně (zhodnocení předchozích tabulek) a pak jedna tabulka s přehledem řešení od jiných autorů s tím novým řešením (mělo by se ukázat, že to nové řešení je nejlepší)
+\subsection{ROZSAH}
+Rozsah je 1strana.
+
+
+
+\section{CONCLUSIONS / ZÁVĚRY}
+Tady už se vyjádřit jen k tomu, že se podařilo najít (definovat) nový přístup k řešení problému a že byl i prakticky ověřen na modelovém případě. 
+Dobré je také diskutovat využitelnost nového řešení jak v aktuální oblasti problému (nejlépe včetně finančních či časových úspor), tak i v dalších oblastech (alespoň nastínit).
+Rozsah závěru je minimálně 10 řádků, maximálně 20 řádků.
+
+
+% seznam zdrojů
+\begin{thebibliography}{1}
+\bibitem{}
+Jahan, S., Begum, K., Shaheen, N., \& Khandokar, M. (2006). Near-Miss/Severe acute maternal morbidity (SAMM): A new concept in maternal care. Journal of Bangladesh College of Physicians and Surgeons, 24(1), 29-33.
+
+\bibitem{}
+World Health Organization, \& Unicef. (1996). Revised 1990 estimates of maternal mortality: a new approach by WHO and UNICEF
+
+\end{thebibliography}
+
+% nebo
+
+% \bibliographystyle{plain}
+% \bibliography{references.bib}{}
+
+
+% that's all folks
+\end{document}
