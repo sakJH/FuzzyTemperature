@@ -29,3 +29,6 @@ fprintf('MSE tohoto modelu na celém datasetu: %f\n', mse);
 
 % Uložení nejlepšího FIS do .fis souboru
 writefis(best_fis, 'BestOptimalCloudFuzzyFIS.fis');
+
+% Spuštìní porovnávajícího scriptu
+compareModels;
